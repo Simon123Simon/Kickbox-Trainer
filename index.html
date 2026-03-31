@@ -129,15 +129,15 @@ const DEFAULT_WORKOUT = [
   },
   {
     id: "w2", phase: "Warm-Up", name: "Hüftkreise", detail: "10 × je Seite", emoji: "🔄",
-    ausfuehrung: "Hände auf den Hüften, Beine schulterbreit. Große, langsame Kreise mit der Hüfte – zuerst im Uhrzeigersinn, dann gegen den Uhrzeigersinn.",
+    ausfuehrung: "Hände auf den Hüften, Beine schulterbreit. Große, langsame Kreise mit der Hüfte – zuerst im Uhrzeigersinn, dann gegen den Uhrzeigersinn. Einfach zählen, kein Timer.",
     warum: "Mobilisiert die Hüftgelenke und bereitet sie auf Kicks vor. Direkte Verbindung zur Hüftrotation beim Roundhouse.",
     muskeln: ["Hüftrotatoren", "Lendenwirbelsäule", "Beckenboden"],
   },
   {
-    id: "w3", phase: "Warm-Up", name: "Slow Bodyweight Squat", detail: "10 Wdh.", emoji: "🧘",
-    ausfuehrung: "Beine schulterbreit, Zehen leicht nach außen. Langsam in 3 Sek. absenken, unten kurz halten, wieder hoch. Knie folgen den Zehen, Rücken gerade.",
-    warum: "Erwärmt Hüfte, Knie und Sprunggelenk geräuschlos. Besser als Kniehebelauf für die Wohnung – gleiche Muskelaktivierung, kein Lärm für Nachbarn.",
-    variante: "Tiefer gehen wenn Mobilität es erlaubt. Fersen leicht erhöhen wenn Sprunggelenke noch steif sind.",
+    id: "w3", phase: "Warm-Up", name: "Slow Squat + Beinheben", detail: "10 Wdh.", emoji: "🧘",
+    ausfuehrung: "Beine schulterbreit, Zehen leicht nach außen. Langsam in 3 Sek. absenken, wieder hoch – dann abwechselnd ein Bein nach vorne heben (Frontkick-Bewegung) oder seitlich (Sidekick-Kammer). Pro Wiederholung eine Seite.",
+    warum: "Erwärmt Hüfte, Knie und Sprunggelenk und trainiert gleichzeitig die Kammer-Bewegung beim Kick. Geräuschlos.",
+    variante: "Nur Squat ohne Beinheben wenn die Beine noch steif sind.",
     muskeln: ["Quadrizeps", "Gluteus", "Hüftbeuger", "Sprunggelenk"],
   },
   {
@@ -152,71 +152,71 @@ const DEFAULT_WORKOUT = [
     warum: "Kombiniert Hüftbeuger-Dehnung, BWS-Rotation und Schulteröffnung in einer Bewegung. Sehr effizient als letztes Warm-Up bevor die Kicks kommen.",
     muskeln: ["Hüftbeuger", "Brustwirbelsäule", "Schultern", "Hüftaußenrotatoren"],
   },
-  // ── KAMPFSPORT (~12 Min) – zuerst, wenn du noch frisch bist ────────────
+  // ── KAMPFSPORT ──────────────────────────────────────────────────────────
   {
     id: "kb1", phase: "Kampfsport", name: "Shadow Boxing (Jab-Cross-Hook)", detail: "2 × 45 Sek.", emoji: "🥊",
     ausfuehrung: "Kampfposition. Jab (vordere Hand gerade), Cross (hintere Hand mit Hüftrotation), Hook (gebogener Arm seitlich). Hüfte bei jedem Schlag vollständig rotieren. Tempo: 60–70%, Fokus auf Technik.",
-    warum: "Technik-Training zuerst – wenn du frisch bist lernst du schneller. Die Hüftrotation beim Cross erzeugt 60% der Schlagkraft. Jetzt üben, nicht nach 30 Min Krafttraining.",
+    warum: "Technik-Training zuerst – wenn du frisch bist lernst du schneller. Die Hüftrotation beim Cross erzeugt 60% der Schlagkraft.",
     variante: "Beim Cross hintere Ferse anheben – das erzwingt die korrekte Hüftrotation.",
     muskeln: ["Schultern", "Obliques", "Hüftrotatoren"],
   },
   {
     id: "kb2", phase: "Kampfsport", name: "Kammer + Front Kick", detail: "2 × 45 Sek./Seite", emoji: "🦶",
-    ausfuehrung: "Im Stand: Knie explosiv zur Brust ziehen (Kammer!) – kurz halten – dann Fuß nach vorne strecken (Kick). Kontrolliert zurück. Erst eine Seite, dann wechseln. ⚠️ Seitenwechsel bei Halbzeit!",
-    warum: "Isoliert die Kammer-Bewegung ohne Kniebeuge davor. Anfänger brauchen dieses Muster sauber im Kopf bevor sie Kombinationen üben. Direkt für deine Kickhöhe.",
+    ausfuehrung: "Im Stand: Knie explosiv zur Brust ziehen (Kammer!) – kurz halten – dann Fuß nach vorne strecken (Kick). Kontrolliert zurück. Erst eine Seite 45 Sek., dann 3 Sek. Wechsel, dann andere Seite 45 Sek.",
+    warum: "Isoliert die Kammer-Bewegung. Anfänger brauchen dieses Muster sauber im Kopf bevor sie Kombinationen üben. Direkt für deine Kickhöhe.",
     variante: "Knie so hoch wie möglich – Höhe der Kammer bestimmt die Höhe des Kicks.",
     muskeln: ["Hüftbeuger", "Quadrizeps", "Gluteus", "Core"],
   },
   {
     id: "kb3", phase: "Kampfsport", name: "Roundhouse Kick langsam", detail: "2 × 8 Wdh./Seite", emoji: "🌀",
-    ausfuehrung: "Kampfposition. Knie zur Seite heben (Kammer), Hüfte nach vorne drehen, Bein strecken. Langsam und kontrolliert – kein Schwung. Standfuß dreht mit. ⚠️ Seitenwechsel nach 8 Wdh.!",
-    warum: "Langsam üben verankert die korrekte Hüftdrehung neurologisch. Schwung kaschiert Technikfehler – Kontrolle baut echte Kickkraft auf. Besonders wichtig für links.",
+    ausfuehrung: "Kampfposition. Knie zur Seite heben (Kammer), Hüfte nach vorne drehen, Bein strecken. Langsam und kontrolliert – kein Schwung. Standfuß dreht mit.",
+    warum: "Langsam üben verankert die korrekte Hüftdrehung neurologisch. Schwung kaschiert Technikfehler – Kontrolle baut echte Kickkraft auf.",
     variante: "Kickhöhe ist egal – Hüftdrehung ist alles. Lieber Kniehöhe sauber als Hüfthöhe schlampig.",
     muskeln: ["Hüftrotatoren", "Gluteus medius", "Obliques", "Standbein-Stabilisatoren"],
   },
   {
+    id: "kb5", phase: "Kampfsport", name: "Sidekick langsam", detail: "2 × 8 Wdh./Seite", emoji: "🦵",
+    ausfuehrung: "Kampfposition. Knie zur Seite heben (Kammer seitlich), Hüfte nach außen schieben – nicht drehen wie beim Roundhouse. Fußsohle zeigt zur Seite. Bein linear nach außen strecken, Ferse führt. Kontrolliert zurück. Standfuß dreht leicht mit. Langsam und bewusst.",
+    warum: "Sidekick ist eine komplett andere Mechanik als Roundhouse – linearer Hüftschub statt Rotation. Separat und langsam üben ist essenziell damit das Muster sich neurologisch einprägt.",
+    variante: "Erst ohne Kick üben: nur Kammer seitlich + Hüftschub, dann Bein zurück. Kickhöhe egal – Hüftschub und Fußstellung sind alles.",
+    muskeln: ["Gluteus medius", "Hüftabduktoren", "Quadrizeps", "Standbein-Stabilisatoren"],
+  },
+  {
     id: "kb4", phase: "Kampfsport", name: "Plank + Sprawl", detail: "2 × 30 Sek.", emoji: "⚔️",
     ausfuehrung: "Aus dem Plank: beide Beine gleichzeitig explosiv nach hinten schnellen – die Hüfte sinkt dabei zur Matte, Oberkörper bleibt aufgestützt. Sofort zurück in den Plank. Das ist ein Sprawl – die Bewegung mit der du einem Takedown ausweichst. Core bleibt die ganze Zeit gespannt.",
-    warum: "Core-Stabilität unter Belastung – die Verbindung zwischen Ober- und Unterkörper die Schlagkraft überträgt. Geräuscharm und sehr effektiv. Der Sprawl ist eine wichtige Grundbewegung im Kampfsport.",
+    warum: "Core-Stabilität unter Belastung – die Verbindung zwischen Ober- und Unterkörper die Schlagkraft überträgt. Geräuscharm und sehr effektiv.",
     variante: "Zu intensiv: langsamer ausführen mit kurzem Halt unten. Alternativ: Mountain Climber mit Knie zur Seite (abwechselnd).",
     muskeln: ["Core", "Schultern", "Hüftbeuger"],
   },
-  // ── KRAFT (~14 Min) ─────────────────────────────────────────────────────
+  // ── KRAFT ───────────────────────────────────────────────────────────────
   {
     id: "k1", phase: "Kraft", name: "Explosive Push-Up", detail: "2 × 30 Sek.", emoji: "💥",
     img: "https://fitnessvolt.com/wp-content/uploads/2021/08/plyometric-push-up.jpg",
-    ausfuehrung: "Liegestützposition. Tief absenken, dann explosiv nach oben drücken bis die Hände abheben. Sanfte Landung, direkt weiter. Qualität vor Quantität.",
-    warum: "Explosive Pushing-Power für Jab und Cross. Pliometrik = Schnellkraft. Eine Push-Up-Variante reicht – diese ist die effektivste für Kampfsport.",
+    ausfuehrung: "Liegestützposition. Tief absenken, dann explosiv nach oben drücken bis die Hände abheben. Sanfte Landung, direkt weiter. Mach so viele explosive wie möglich – wenn die Kraft nachlässt, normale Push-Ups weitermachen bis die Zeit um ist.",
+    warum: "Explosive Pushing-Power für Jab und Cross. Pliometrik = Schnellkraft.",
     variante: "Einfacher: normaler Push-Up mit schnellem Lockout. Schwerer: klatschen in der Luft.",
     muskeln: ["Pectoralis major", "Trizeps", "Anteriorer Deltoideus"],
   },
   {
     id: "k2", phase: "Kraft", name: "Bulgarian Split Squat", detail: "2 × 30 Sek./Seite", emoji: "🏋️",
     img: "https://fitnessvolt.com/wp-content/uploads/2020/12/bulgarian-split-squat.jpg",
-    ausfuehrung: "Hinterer Fuß auf Stuhl/Sofa. Vorderes Knie über dem Fuß absenken, explosiv hochdrücken. Erst eine Seite komplett, dann wechseln. ⚠️ Seitenwechsel nach 30 Sek.!",
-    warum: "Unilaterale Beinkraft – exakt das Kraftverhältnis beim Kick auf einem Bein. Stärkt Standbein und Abdruckkraft. Leiser als Kniebeugen mit Sprung.",
+    ausfuehrung: "Hinterer Fuß auf Stuhl/Sofa. Vorderes Knie über dem Fuß absenken, explosiv hochdrücken. Erst eine Seite 30 Sek., dann 3 Sek. Wechsel, dann andere Seite 30 Sek.",
+    warum: "Unilaterale Beinkraft – exakt das Kraftverhältnis beim Kick auf einem Bein. Stärkt Standbein und Abdruckkraft.",
     variante: "Hinterer Fuß auf Stuhl, Sofa oder Treppenabsatz. Tiefer = mehr Gluteus.",
     muskeln: ["Quadrizeps", "Gluteus maximus", "Hamstrings"],
   },
   {
     id: "k3", phase: "Kraft", name: "Einbeinige Glute Bridge", detail: "2 × 12 Wdh./Seite", emoji: "🌉",
     ausfuehrung: "Rückenlage, ein Knie angewinkelt, Fuß flach. Das andere Bein gestreckt nach oben halten. Gesäß explosiv nach oben drücken – oben 1 Sek. halten. Langsam absenken. Becken bleibt gerade. ⚠️ Seitenwechsel nach 12 Wdh.!",
-    warum: "Einbeinig = deutlich mehr Gluteus-Aktivierung als beidbeinig. Trainiert exakt die Standbein-Stabilität die beim Kick gebraucht wird. Sehr kickbox-relevant.",
+    warum: "Einbeinig = deutlich mehr Gluteus-Aktivierung. Trainiert exakt die Standbein-Stabilität die beim Kick gebraucht wird.",
     variante: "Füße erhöht auf Stuhl für noch mehr Intensität.",
     muskeln: ["Gluteus maximus", "Hamstrings", "Core"],
   },
-  {
-    id: "k4", phase: "Kraft", name: "Hollow Body Hold", detail: "2 × 30 Sek.", emoji: "🪨",
-    ausfuehrung: "Rückenlage, Arme gestreckt über Kopf. Beine und Schultern gleichzeitig leicht anheben – Rücken bleibt FLACH auf dem Boden. Becken nach hinten kippen.",
-    warum: "Trainiert die Körperspannung die Power von der Hüfte durch den Core in den Schlag überträgt. Ohne diese Spannung geht Kraft verloren.",
-    variante: "Einfacher: Arme an den Körper. Schwerer: Arme über Kopf gestreckt.",
-    muskeln: ["Transversus abdominis", "Rectus abdominis", "Hüftbeuger"],
-  },
-  // ── CORE (~6 Min) ───────────────────────────────────────────────────────
+  // ── CORE ────────────────────────────────────────────────────────────────
   {
     id: "c1", phase: "Core", name: "Dead Bug", detail: "2 × 8 Wdh./Seite", emoji: "🐛",
     ausfuehrung: "Rückenlage, Arme senkrecht nach oben, Beine 90°. Gegenüberliegenden Arm und Bein langsam absenken ohne den Rücken zu heben. Zurück. Langsam und kontrolliert.",
-    warum: "Anti-Rotations-Stabilität – die Core-Funktion die beim Kick die Kraft vom Bein in den Oberkörper überträgt. Qualitativ wichtiger als Russian Twist.",
+    warum: "Anti-Rotations-Stabilität – die Core-Funktion die beim Kick die Kraft vom Bein in den Oberkörper überträgt.",
     muskeln: ["Transversus abdominis", "Multifidus", "Hüftbeuger"],
   },
   {
@@ -230,28 +230,57 @@ const DEFAULT_WORKOUT = [
   {
     id: "c3", phase: "Core", name: "V-Up", detail: "2 × 12 Wdh.", emoji: "✌️",
     ausfuehrung: "Rückenlage, Arme über Kopf. Gleichzeitig Arme und Beine zur Mitte heben – Finger zu Füßen. Kontrolliert absenken. Nicht mit Schwung.",
-    warum: "Explosive Hüftflexion – genau die Bewegung die beim Front Kick das Bein nach oben schnellt. Direkte Verstärkung der Kammer-Bewegung.",
-    variante: "Einfacher: Bicycle Crunch. Schwerer: Beine gestreckt halten beim Absenken.",
+    warum: "Explosive Hüftflexion – genau die Bewegung die beim Front Kick das Bein nach oben schnellt.",
+    variante: "Knie gebeugt lassen wenn gestreckte Beine noch nicht gehen – das ist völlig okay. Einfacher: Bicycle Crunch.",
     muskeln: ["Rectus abdominis", "Hüftbeuger", "Obliques"],
   },
-  // ── COOL-DOWN (~3 Min) ──────────────────────────────────────────────────
+  {
+    id: "k4", phase: "Core", name: "Hollow Body Hold", detail: "2 × 30 Sek.", emoji: "🪨",
+    ausfuehrung: "Rückenlage, Arme gestreckt über Kopf. Beine und Schultern gleichzeitig leicht anheben – Rücken bleibt FLACH auf dem Boden. Becken nach hinten kippen.",
+    warum: "Trainiert die Ganzkörperspannung die Power von der Hüfte durch den Core in den Schlag überträgt. Ohne diese Spannung geht Kraft verloren.",
+    variante: "Einfacher: Arme an den Körper legen. Schwerer: Beine tiefer absenken.",
+    muskeln: ["Transversus abdominis", "Rectus abdominis", "Hüftbeuger"],
+  },
+  // ── ISOMETRICS ──────────────────────────────────────────────────────────
+  {
+    id: "iso1", phase: "Isometrics", name: "Plank", detail: "2 × 45 Sek.", emoji: "🧱",
+    ausfuehrung: "Unterarmstütz, Ellbogen unter den Schultern. Körper bildet eine gerade Linie von Kopf bis Ferse – kein Hohlkreuz, kein Hintern hoch. Bauch anspannen, Gesäß anspannen, atmen.",
+    warum: "Basisstabilität für den gesamten Körper. Der Plank trainiert die statische Core-Spannung die bei jedem Schlag und Kick aktiv ist.",
+    variante: "Einfacher: Knie auf den Boden. Schwerer: Arme gestreckt (Push-Up-Position).",
+    muskeln: ["Transversus abdominis", "Gluteus", "Schultern", "Serratus anterior"],
+  },
+  {
+    id: "iso2", phase: "Isometrics", name: "Wall Sit", detail: "2 × 45 Sek.", emoji: "🪑",
+    ausfuehrung: "Rücken an der Wand, Knie 90° gebeugt, Oberschenkel parallel zum Boden. Füße hüftbreit, flach auf dem Boden. Arme locker vor der Brust oder auf den Oberschenkeln. Halten und atmen.",
+    warum: "Isometrische Beinausdauer – trainiert Quadrizeps und Gluteus unter Dauerbelastung. Stärkt das Standbein für lange Kickboxing-Runden.",
+    variante: "Einfacher: Knie weniger als 90° beugen. Schwerer: ein Bein leicht anheben.",
+    muskeln: ["Quadrizeps", "Gluteus", "Ischiocrurale Muskulatur"],
+  },
+  {
+    id: "iso3", phase: "Isometrics", name: "Kick Hold", detail: "3 × 10 Sek./Seite", emoji: "🦶",
+    ausfuehrung: "Aus der Kampfposition Knie zur Kammer heben – dann Bein in Kickposition strecken (Hüfthöhe oder so hoch wie möglich). Position halten. Standbein leicht gebeugt, Oberkörper aufrecht. 10 Sek. halten, Bein zurück, kurz pausieren, wiederholen. ⚠️ Seitenwechsel nach 3 Wdh.!",
+    warum: "Trainiert direkt die Muskulatur die den Kick oben hält – Hüftbeuger, Quadrizeps, Hüftabduktoren. Was du nicht halten kannst, kannst du auch nicht kontrolliert ausführen. Direktester Transfer auf Kickhöhe und -kontrolle.",
+    variante: "Kniehöhe reicht vollkommen am Anfang. Frontkick oder Sidekick-Position – beide sind sinnvoll.",
+    muskeln: ["Hüftbeuger", "Quadrizeps", "Gluteus medius", "Core"],
+  },
+  // ── COOL-DOWN ───────────────────────────────────────────────────────────
   {
     id: "cd1", phase: "Cool-Down", name: "4-7-8 Atmung", detail: "8 Runden", emoji: "🌬️",
     breathing: true,
     ausfuehrung: "4 Sek. einatmen durch die Nase. 7 Sek. Atem anhalten. 8 Sek. langsam ausatmen durch den Mund. Der Timer führt dich durch alle 8 Runden.",
-    warum: "Aktiviert den Parasympathikus. Dein Max-Puls war beim ersten Training 182 bpm – diese Übung beschleunigt die Erholung messbar und senkt Cortisol.",
+    warum: "Aktiviert den Parasympathikus und beschleunigt die Erholung nach dem Training.",
     muskeln: ["Zwerchfell", "Nervensystem"],
   },
   {
     id: "cd2", phase: "Cool-Down", name: "Child's Pose", detail: "60 Sek.", emoji: "🙇",
     ausfuehrung: "Knie auf dem Boden, Großzehen berühren sich. Oberkörper nach vorne legen, Arme gestreckt. Stirn auf dem Boden. Komplett loslassen.",
-    warum: "Entspannt LWS, Hüfte und Schultern nach der Belastung. Parasympathikus-Aktivierung durch die Bauchlage.",
+    warum: "Entspannt LWS, Hüfte und Schultern nach der Belastung.",
     muskeln: ["LWS", "Hüftbeuger", "Schultern"],
   },
   {
     id: "cd3", phase: "Cool-Down", name: "Liegender Twist", detail: "45 Sek./Seite", emoji: "🌿",
     ausfuehrung: "Rückenlage, rechtes Knie zur Brust, mit linker Hand auf die linke Seite drücken. Rechter Arm zur Seite, Blick nach rechts. Schultern flach. Dann Seite wechseln. ⚠️ Seitenwechsel nach 45 Sek.!",
-    warum: "Derotiert die Lendenwirbelsäule nach vielen Rotationsbewegungen. Perfekter Abschluss für heute.",
+    warum: "Derotiert die Lendenwirbelsäule nach vielen Rotationsbewegungen.",
     muskeln: ["LWS-Rotatoren", "Piriformis", "Obliques"],
   },
 ];
@@ -293,12 +322,6 @@ const DEFAULT_STRETCH = [
     variante: "Langsam und kontrolliert ist wichtiger als großer Bewegungsumfang. Mit der Zeit wird die Rotation größer.",
     muskeln: ["Hüftinnenrotatoren", "Gluteus minimus", "TFL"],
   },
-  {
-    id: "s13", phase: "Rotation", name: "90/90 Hip Lift", detail: "2 × 5–8 Wdh./Seite", emoji: "🦵",
-    ausfuehrung: "Im 90/90-Sitz, schwierige Seite zuerst (Innenrotation). Ohne Abstützen das hintere Knie aktiv 1–2 cm vom Boden heben – nur das Knie, Unterschenkel bleibt unten. 2–3 Sekunden halten, langsam ablegen. Oberkörper bleibt aufrecht. Wenn du zur Seite kippst: Bewegungsumfang reduzieren, nicht kompensieren.",
-    warum: "Baut aktive Kraft in der Hüftinnenrotation auf – der limitierende Faktor wenn der 90/90 nur mit Abstützen funktioniert. Passives Dehnen löst dieses Problem nicht: der Körper braucht Kontrolle in der Range of Motion, nicht nur Reichweite.",
-    muskeln: ["Hüftinnenrotatoren", "Gluteus medius", "TFL", "Core"],
-  },
   // ── HAMSTRINGS ──────────────────────────────────────────────────────────
   {
     id: "s11", phase: "Hamstrings", name: "Einbeiniger Stuhl-Stretch", detail: "60 Sek./Seite", emoji: "🦵",
@@ -317,9 +340,9 @@ const DEFAULT_STRETCH = [
   // ── HÜFTBEUGER ──────────────────────────────────────────────────────────
   {
     id: "s7", phase: "Hüftbeuger", name: "Half-Kneeling Hip Flexor Stretch", detail: "2 × 75–90 Sek./Seite", emoji: "🧎",
-    ausfuehrung: "Kniender Ausfallschritt, hinteres Knie auf dem Boden, Oberkörper aufrecht. Erst Becken eintucken: Steiß nach unten ziehen, Unterbauch leicht anspannen, die natürliche Hohlkreuzkurve reduzieren. Diese Spannung halten. Dann als Block nach vorne sinken bis Zug tief in der Hüfte/vorne am Beckenkamm des hinteren Beins spürbar. Oberkörper bleibt gerade – nicht beugen, nicht neigen. Wenn der untere Rücken zieht: weniger weit vorsinken oder Beckeneintucken nachjustieren.",
-    warum: "Verkürzte Hüftbeuger (Iliopsoas) sind der häufigste Grund für niedrige Kicks. Das Eintucken nimmt dem Psoas den Spielraum weg und erzwingt die echte Dehnung – ohne es weicht man ins Hohlkreuz aus und trifft hauptsächlich Rectus Femoris. 75–90 Sekunden sind nötig für echte Längenveränderung.",
-    variante: "Danach optional: Becken loslassen und nach vorne schieben (Hohlkreuz) für zusätzliche Dehnung in Rectus Femoris und Leiste. Für mehr Tiefe: Arme über den Kopf strecken.",
+    ausfuehrung: "Kniestand, hinteres Knie auf dem Boden. Becken gerade halten (nicht ins Hohlkreuz fallen!). Hüfte langsam nach vorne-unten schieben bis Dehnung im vorderen Hüftbeuger spürbar. Arme über den Kopf strecken für mehr Tiefe.",
+    warum: "Verkürzte Hüftbeuger (Iliopsoas) sind der häufigste Grund für niedrige Kicks. 75–90 Sekunden sind nötig für echte Längenveränderung – 30s reichen für diesen Muskel nicht aus. Dein wichtigster Einzelstretch.",
+    variante: "Hintere Ferse zur Gesäß ziehen für zusätzlichen Quadrizeps-Anteil. Arm zur Decke strecken für mehr Iliopsoas-Tiefe.",
     muskeln: ["Iliopsoas", "Rectus femoris", "Hüftbeuger"],
   },
   {
@@ -351,7 +374,7 @@ const DEFAULT_STRETCH = [
 const PHASE_COLORS = {
   "Warm-Up":"#d4600a",Kraft:"#cc2233",Kampfsport:"#aa1122",
   Core:"#c47a00","Cool-Down":"#0f9a8a",
-  Aktivierung:"#0f9a8a",Rotation:"#cc2233",Hüftbeuger:"#d4600a",Hamstrings:"#7c3aed",
+  Aktivierung:"#0f9a8a",Rotation:"#cc2233",Hüftbeuger:"#d4600a",Hamstrings:"#7c3aed",Abschluss:"#6b7280",Isometrics:"#1d4ed8",
   Abschluss:"#6b7280",
 };
 const T = {
@@ -1277,113 +1300,39 @@ function SessionToast({type, rating, doneCount, onDone}){
 
 // ─── MAIN APP ─────────────────────────────────────────────────────────────
 function App(){
-  const [tab,setTab]=useState("dashboard");
-  // sessions = [{id, date, type, done, rating, timestamp}]
-  const [sessions,setSessions]=useState([]);
+  const [tab,setTab]=useState("workout");
   const [workoutEx,setWorkoutEx]=useState(DEFAULT_WORKOUT);
   const [stretchEx,setStretchEx]=useState(DEFAULT_STRETCH);
   const [loaded,setLoaded]=useState(false);
   const [editMode,setEditMode]=useState(null);
-  const [showRating,setShowRating]=useState(null);
-  const [pendingDone,setPendingDone]=useState(null);
-  const [toast,setToast]=useState(null); // {type, rating, doneCount}
-  const [wochenZiel,setWochenZiel]=useState({workout:4,stretch:5});
   const [pauseSek,setPauseSek]=useState(20);
 
   useEffect(()=>{
     (async()=>{
-      const s=await load("kb4-sessions"),w=await load("kb4-workout-ex"),st=await load("kb4-stretch-ex");
+      const w=await load("kb4-workout-ex"),st=await load("kb4-stretch-ex");
       const settings=await load("kb4-settings");
-      // Migrate old history format if present
-      const oldHistory=await load("kb4-history");
-      if(s){setSessions(s);}
-      else if(oldHistory){
-        // Convert old {date: {workout,stretch,...}} to session array
-        const migrated=[];
-        Object.entries(oldHistory).forEach(([date,val])=>{
-          if(val.workout)migrated.push({id:`mig-w-${date}`,date,type:"workout",done:val.workoutDone||{},rating:val.rating||0,timestamp:new Date(date+"T10:00:00").getTime()});
-          if(val.stretch)migrated.push({id:`mig-s-${date}`,date,type:"stretch",done:val.stretchDone||{},rating:val.rating||0,timestamp:new Date(date+"T11:00:00").getTime()});
-        });
-        setSessions(migrated);
-      }
       if(w)setWorkoutEx(w);if(st)setStretchEx(st);
-      if(settings){if(settings.wochenZiel)setWochenZiel(settings.wochenZiel);if(settings.pauseSek!=null)setPauseSek(settings.pauseSek);}
+      if(settings&&settings.pauseSek!=null)setPauseSek(settings.pauseSek);
       setLoaded(true);
     })();
   },[]);
-  useEffect(()=>{if(loaded)save("kb4-sessions",sessions);},[sessions,loaded]);
   useEffect(()=>{if(loaded)save("kb4-workout-ex",workoutEx);},[workoutEx,loaded]);
   useEffect(()=>{if(loaded)save("kb4-stretch-ex",stretchEx);},[stretchEx,loaded]);
-  useEffect(()=>{if(loaded)save("kb4-settings",{wochenZiel,pauseSek});},[wochenZiel,pauseSek,loaded]);
+  useEffect(()=>{if(loaded)save("kb4-settings",{pauseSek});},[pauseSek,loaded]);
 
-  const requestComplete=(type,done)=>{
-    setPendingDone({type,done});
-    setShowRating(type);
-  };
-  const finishSession=(rating)=>{
-    const{type,done}=pendingDone;
-    const doneCount=Object.values(done).filter(Boolean).length;
-    const newSession={
-      id:`${type}-${Date.now()}`,
-      date:today(),
-      type,
-      done,
-      rating,
-      timestamp:Date.now(),
-    };
-    setSessions(prev=>[...prev,newSession]);
-    setShowRating(null);setPendingDone(null);
-    setToast({type,rating,doneCount});
-    setTab(type); // stay on workout/stretch tab, toast disappears automatically
-  };
-
-  // Derived values for dashboard
-  const todaySessions=sessions.filter(s=>s.date===today());
-  const todayWorkout=todaySessions.some(s=>s.type==="workout");
-  const todayStretch=todaySessions.some(s=>s.type==="stretch");
-  const todayRating=todaySessions.length>0?Math.max(...todaySessions.map(s=>s.rating)):0;
-
-  // Streak
-  const dayMap={};
-  sessions.forEach(s=>{if(!dayMap[s.date])dayMap[s.date]={};dayMap[s.date][s.type]=true;});
-  let streak=0;
-  for(let i=0;i<365;i++){const d=new Date();d.setDate(d.getDate()-i);if(dayMap[toDateKey(d)])streak++;else break;}
-
-  // This week
-  const thisWeekStart=getMonday(new Date());
-  const weekWorkouts=sessions.filter(s=>s.type==="workout"&&s.date>=thisWeekStart).length;
-  const weekStretches=sessions.filter(s=>s.type==="stretch"&&s.date>=thisWeekStart).length;
-
-  const tabs=[{id:"dashboard",label:"Home",icon:"⚡"},{id:"workout",label:"Workout",icon:"🥊"},{id:"stretch",label:"Stretch",icon:"🧘"},{id:"stats",label:"Stats",icon:"📊"},{id:"edit",label:"Anpassen",icon:"✎"}];
+  const tabs=[{id:"workout",label:"Workout",icon:"🥊"},{id:"stretch",label:"Stretch",icon:"🧘"},{id:"edit",label:"Anpassen",icon:"✎"}];
 
   if(!loaded)return<div style={{minHeight:"100vh",background:T.bg,display:"flex",alignItems:"center",justifyContent:"center",color:T.textMuted,fontFamily:T.font,fontSize:"16px"}}>Lade…</div>;
 
-  // Build heatmap-compatible dayMap for Heatmap component
-  const heatmapHistory = {};
-  sessions.forEach(s=>{
-    if(!heatmapHistory[s.date])heatmapHistory[s.date]={};
-    heatmapHistory[s.date][s.type]=true;
-  });
-
-  // Today's session count per type (for "Session #N" badge)
-  const todayWorkoutCount=todaySessions.filter(s=>s.type==="workout").length;
-  const todayStretchCount=todaySessions.filter(s=>s.type==="stretch").length;
-
   return(
     <div style={{minHeight:"100vh",background:T.bg,color:T.text,fontFamily:T.font,paddingBottom:"72px"}}>
-
-      {/* Rating modal */}
-      {showRating&&<RatingModal onSave={finishSession} onSkip={()=>finishSession(0)}/>}
-
-      {/* Toast */}
-      {toast&&<SessionToast type={toast.type} rating={toast.rating} doneCount={toast.doneCount} onDone={()=>setToast(null)}/>}
 
       {/* Header */}
       <div style={{background:"#fff",borderBottom:`1px solid ${T.cardBorder}`,padding:"20px 20px 16px",boxShadow:"0 1px 6px rgba(0,0,0,0.06)"}}>
         <div style={{maxWidth:"640px",margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
           <div>
             <div style={{fontSize:"11px",fontWeight:"700",letterSpacing:"3px",color:T.accent,textTransform:"uppercase",marginBottom:"4px"}}>Kickbox Training</div>
-            <h1 style={{fontSize:"26px",fontWeight:"800",margin:0,color:T.text,letterSpacing:"-0.5px"}}>Tracker</h1>
+            <h1 style={{fontSize:"26px",fontWeight:"800",margin:0,color:T.text,letterSpacing:"-0.5px"}}>Trainer</h1>
           </div>
           <div style={{textAlign:"right"}}>
             <div style={{fontSize:"13px",fontWeight:"700",color:T.textSub,fontFamily:T.font}}>
@@ -1398,109 +1347,31 @@ function App(){
 
       <div style={{maxWidth:"640px",margin:"0 auto",padding:"18px 16px 0"}}>
 
-        {/* DASHBOARD */}
-        {tab==="dashboard"&&(
-          <div>
-            {/* Wochenziel Rings */}
-            <div style={{background:T.card,borderRadius:"14px",border:`1px solid ${T.cardBorder}`,padding:"20px",marginBottom:"16px",boxShadow:"0 1px 4px rgba(0,0,0,0.05)"}}>
-              <div style={{fontSize:"12px",fontWeight:"700",letterSpacing:"2px",color:T.textMuted,textTransform:"uppercase",fontFamily:T.font,marginBottom:"16px"}}>Wochenziel</div>
-              <div style={{display:"flex",justifyContent:"space-around"}}>
-                <WochenRing done={weekWorkouts} goal={wochenZiel.workout} label="Workouts" color={T.accent}/>
-                <WochenRing done={weekStretches} goal={wochenZiel.stretch} label="Stretches" color={T.teal}/>
-                <WochenRing done={weekWorkouts+weekStretches} goal={wochenZiel.workout+wochenZiel.stretch} label="Gesamt" color={T.orange}/>
-              </div>
-            </div>
-
-            {/* Today cards */}
-            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"10px",marginBottom:"16px"}}>
-              {[{type:"workout",label:"Workout",icon:"🥊",tabId:"workout",color:T.accent,light:T.accentLight,count:todayWorkoutCount},{type:"stretch",label:"Stretch",icon:"🧘",tabId:"stretch",color:T.teal,light:T.tealLight,count:todayStretchCount}].map(item=>(
-                <div key={item.type} onClick={()=>setTab(item.tabId)}
-                  style={{padding:"20px 16px",background:item.count>0?item.light:T.card,borderRadius:"14px",border:`1.5px solid ${item.count>0?item.color+"50":T.cardBorder}`,cursor:"pointer",boxShadow:"0 1px 6px rgba(0,0,0,0.05)",transition:"all 0.2s"}}>
-                  <div style={{fontSize:"28px",marginBottom:"8px"}}>{item.icon}</div>
-                  <div style={{fontSize:"16px",fontWeight:"700",color:item.count>0?item.color:T.text,marginBottom:"4px"}}>{item.label}</div>
-                  <div style={{fontSize:"13px",fontWeight:"600",color:item.count>0?item.color:T.textMuted}}>
-                    {item.count>0?`✓ ${item.count}× heute`:"Noch offen →"}
-                  </div>
-                  {item.count>0&&todayRating>0&&<div style={{fontSize:"13px",marginTop:"4px"}}>{"⭐".repeat(todayRating)}</div>}
-                </div>
-              ))}
-            </div>
-
-            {/* Heatmap */}
-            <div style={{marginBottom:"16px"}}>
-              <div style={{fontSize:"12px",fontWeight:"700",letterSpacing:"2px",color:T.textMuted,textTransform:"uppercase",marginBottom:"10px"}}>Aktivität · letztes Jahr</div>
-              <div style={{padding:"16px",background:T.card,borderRadius:"14px",border:`1px solid ${T.cardBorder}`,boxShadow:"0 1px 4px rgba(0,0,0,0.04)"}}>
-                <Heatmap history={heatmapHistory}/>
-              </div>
-            </div>
-
-            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:"10px"}}>
-              {[["Workouts",sessions.filter(s=>s.type==="workout").length],["Stretches",sessions.filter(s=>s.type==="stretch").length],["Tage",Object.keys(heatmapHistory).length]].map(([l,v])=>(
-                <div key={l} style={{padding:"14px 10px",background:T.card,borderRadius:"12px",border:`1px solid ${T.cardBorder}`,textAlign:"center",boxShadow:"0 1px 4px rgba(0,0,0,0.04)"}}>
-                  <div style={{fontSize:"26px",fontWeight:"800",color:T.accent}}>{v}</div>
-                  <div style={{fontSize:"11px",fontWeight:"700",color:T.textMuted,letterSpacing:"1px",marginTop:"4px"}}>{l.toUpperCase()}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
         {tab==="workout"&&(
           <div>
-            <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"16px"}}>
-              <div>
-                <div style={{fontSize:"11px",fontWeight:"700",letterSpacing:"2px",color:T.accent,marginBottom:"4px"}}>CALISTHENICS · 35–45 MIN</div>
-                <div style={{fontSize:"22px",fontWeight:"800",color:T.text}}>Full Body Workout</div>
-              </div>
-              {todayWorkoutCount>0&&<span style={{fontSize:"13px",fontWeight:"700",color:T.teal,background:T.tealLight,padding:"6px 12px",borderRadius:"20px"}}>{todayWorkoutCount}× heute ✓</span>}
+            <div style={{marginBottom:"16px"}}>
+              <div style={{fontSize:"11px",fontWeight:"700",letterSpacing:"2px",color:T.accent,marginBottom:"4px"}}>KICKBOXING · CALISTHENICS</div>
+              <div style={{fontSize:"22px",fontWeight:"800",color:T.text}}>Full Body Workout</div>
             </div>
-            <SessionView exercises={workoutEx} savedProgress={null} pauseSek={pauseSek} onComplete={done=>requestComplete("workout",done)}/>
+            <SessionView exercises={workoutEx} savedProgress={null} pauseSek={pauseSek} onComplete={()=>{}}/>
           </div>
         )}
 
         {tab==="stretch"&&(
           <div>
-            <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"16px"}}>
-              <div>
-                <div style={{fontSize:"11px",fontWeight:"700",letterSpacing:"2px",color:T.teal,marginBottom:"4px"}}>MOBILITY · 20–25 MIN</div>
-                <div style={{fontSize:"22px",fontWeight:"800",color:T.text}}>Daily Stretch Routine</div>
-              </div>
-              {todayStretchCount>0&&<span style={{fontSize:"13px",fontWeight:"700",color:T.teal,background:T.tealLight,padding:"6px 12px",borderRadius:"20px"}}>{todayStretchCount}× heute ✓</span>}
+            <div style={{marginBottom:"16px"}}>
+              <div style={{fontSize:"11px",fontWeight:"700",letterSpacing:"2px",color:T.teal,marginBottom:"4px"}}>MOBILITY · DAILY</div>
+              <div style={{fontSize:"22px",fontWeight:"800",color:T.text}}>Stretch Routine</div>
             </div>
-            <SessionView exercises={stretchEx} savedProgress={null} pauseSek={pauseSek} onComplete={done=>requestComplete("stretch",done)}/>
-          </div>
-        )}
-
-        {tab==="stats"&&(
-          <div>
-            <div style={{fontSize:"12px",fontWeight:"700",letterSpacing:"2px",color:T.textMuted,textTransform:"uppercase",marginBottom:"16px"}}>Statistiken & Verlauf</div>
-            <Stats sessions={sessions} workoutEx={workoutEx} stretchEx={stretchEx}/>
+            <SessionView exercises={stretchEx} savedProgress={null} pauseSek={pauseSek} onComplete={()=>{}}/>
           </div>
         )}
 
         {tab==="edit"&&(
           <div>
-            {/* Settings: weekly goals + pause */}
+            {/* Pause setting */}
             <div style={{background:T.card,borderRadius:"14px",border:`1px solid ${T.cardBorder}`,padding:"20px",marginBottom:"20px",boxShadow:"0 1px 4px rgba(0,0,0,0.05)"}}>
               <div style={{fontSize:"12px",fontWeight:"700",letterSpacing:"2px",color:T.textMuted,textTransform:"uppercase",fontFamily:T.font,marginBottom:"16px"}}>Einstellungen</div>
-
-              {/* Wochenziele */}
-              <div style={{marginBottom:"16px"}}>
-                <div style={{fontSize:"13px",fontWeight:"700",color:T.text,fontFamily:T.font,marginBottom:"10px"}}>Wochenziel</div>
-                {[["Workouts pro Woche","workout",T.accent],[" Stretches pro Woche","stretch",T.teal]].map(([label,key,color])=>(
-                  <div key={key} style={{display:"flex",alignItems:"center",gap:"12px",marginBottom:"10px"}}>
-                    <div style={{flex:1,fontSize:"13px",color:T.textSub,fontFamily:T.font}}>{label}</div>
-                    <div style={{display:"flex",alignItems:"center",gap:"8px"}}>
-                      <button onClick={()=>setWochenZiel(p=>({...p,[key]:Math.max(1,p[key]-1)}))
-                      } style={{width:"36px",height:"36px",borderRadius:"8px",border:`1.5px solid ${T.cardBorder}`,background:T.bg,color:T.textSub,cursor:"pointer",fontSize:"18px",fontWeight:"700",display:"flex",alignItems:"center",justifyContent:"center"}}>−</button>
-                      <div style={{width:"36px",textAlign:"center",fontSize:"18px",fontWeight:"800",color:color,fontFamily:T.font}}>{wochenZiel[key]}</div>
-                      <button onClick={()=>setWochenZiel(p=>({...p,[key]:Math.min(7,p[key]+1)}))} style={{width:"36px",height:"36px",borderRadius:"8px",border:`1.5px solid ${T.cardBorder}`,background:T.bg,color:T.textSub,cursor:"pointer",fontSize:"18px",fontWeight:"700",display:"flex",alignItems:"center",justifyContent:"center"}}>+</button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Pause duration */}
               <div>
                 <div style={{fontSize:"13px",fontWeight:"700",color:T.text,fontFamily:T.font,marginBottom:"10px"}}>Automatische Pause nach Timer</div>
                 <div style={{display:"flex",gap:"8px",flexWrap:"wrap"}}>
@@ -1522,17 +1393,20 @@ function App(){
                 <button key={mode} onClick={()=>setEditMode(mode)} style={{flex:1,padding:"12px",borderRadius:"10px",border:`1.5px solid ${editMode===mode?T.accent:T.cardBorder}`,background:editMode===mode?T.accentLight:T.card,color:editMode===mode?T.accent:T.textSub,cursor:"pointer",fontSize:"14px",fontWeight:"700",fontFamily:T.font}}>{label}</button>
               ))}
             </div>
-            {/* Reset exercises */}
+            {editMode==="workout"&&<ExerciseEditor exercises={workoutEx} setExercises={setWorkoutEx}/>}
+            {editMode==="stretch"&&<ExerciseEditor exercises={stretchEx} setExercises={setStretchEx}/>}
+
+            {/* Reset */}
             <div style={{marginTop:"20px",background:"#fff5f5",border:`1.5px solid #fca5a5`,borderRadius:"14px",padding:"16px 20px"}}>
-              <div style={{fontSize:"13px",fontWeight:"700",color:T.accent,fontFamily:T.font,marginBottom:"6px"}}>Übungsdaten zurücksetzen</div>
-              <div style={{fontSize:"12px",color:T.textSub,fontFamily:T.font,marginBottom:"12px"}}>Setzt Workout und Stretch auf die aktuellen Standard-Übungen zurück. Dein Verlauf und deine Statistiken bleiben erhalten.</div>
+              <div style={{fontSize:"13px",fontWeight:"700",color:T.accent,fontFamily:T.font,marginBottom:"6px"}}>Übungen zurücksetzen</div>
+              <div style={{fontSize:"12px",color:T.textSub,fontFamily:T.font,marginBottom:"12px"}}>Setzt Workout und Stretch auf die Standard-Übungen zurück.</div>
               <button onClick={()=>{
                 if(window.confirm("Übungen wirklich zurücksetzen? Eigene Änderungen gehen verloren.")){
                   setWorkoutEx(DEFAULT_WORKOUT);
                   setStretchEx(DEFAULT_STRETCH);
                 }
               }} style={{padding:"10px 20px",borderRadius:"9px",border:"none",background:T.accent,color:"#fff",cursor:"pointer",fontSize:"13px",fontWeight:"700",fontFamily:T.font}}>
-                ↺ Übungen zurücksetzen
+                ↺ Zurücksetzen
               </button>
             </div>
           </div>
