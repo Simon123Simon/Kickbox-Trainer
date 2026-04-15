@@ -206,11 +206,18 @@ const DEFAULT_WORKOUT = [
     muskeln: ["Quadrizeps", "Gluteus maximus", "Hamstrings"],
   },
   {
-    id: "k3", phase: "Kraft", name: "Einbeinige Glute Bridge", detail: "2 × 12 Wdh./Seite", emoji: "🌉",
-    ausfuehrung: "Rückenlage, ein Knie angewinkelt, Fuß flach. Das andere Bein gestreckt nach oben halten. Gesäß explosiv nach oben drücken – oben 1 Sek. halten. Langsam absenken. Becken bleibt gerade. ⚠️ Seitenwechsel nach 12 Wdh.!",
-    warum: "Einbeinig = deutlich mehr Gluteus-Aktivierung. Trainiert exakt die Standbein-Stabilität die beim Kick gebraucht wird.",
-    variante: "Füße erhöht auf Stuhl für noch mehr Intensität.",
-    muskeln: ["Gluteus maximus", "Hamstrings", "Core"],
+    id: "k3", phase: "Kraft", name: "TRX Row", detail: "3 × 10–12 Wdh.", emoji: "🔁",
+    ausfuehrung: "TRX-Griffe auf Brusthöhe, Körper schräg nach hinten lehnen – je steiler der Winkel, desto schwerer. Arme gestreckt als Ausgangsposition. Ellbogen nach hinten ziehen, Schulterblätter zusammenziehen, Brust zu den Griffen bringen. Kontrolliert zurück. Körper bleibt die ganze Zeit gerade – kein Hohlkreuz.",
+    warum: "Die wichtigste fehlende Bewegung in deinem Training – ziehende Kraft für die Rückenmuskeln. Jeder Punch braucht starke Gegenspieler in der Schulter, sonst entstehen langfristig Schulterprobleme. Trainiert außerdem die Retraktion nach dem Schlag.",
+    variante: "Einfacher: Körper aufrechter stellen. Schwerer: Körper flacher/horizontaler. Einbeinig für mehr Core-Stabilität.",
+    muskeln: ["Latissimus", "Rhomboideus", "Bizeps", "Posteriorer Deltoideus", "Core"],
+  },
+  {
+    id: "k5", phase: "Kraft", name: "TRX Single Leg Squat", detail: "2 × 8 Wdh./Seite", emoji: "🦵",
+    ausfuehrung: "TRX-Griffe vor der Brust halten, ein Bein leicht nach vorne heben. Auf dem Standbein langsam absinken – so tief wie möglich ohne dass das Knie nach innen kippt. TRX nur zur Balance nutzen, nicht zum Ziehen. Explosiv hochdrücken. ⚠️ Seitenwechsel nach 8 Wdh.!",
+    warum: "Trainiert das Standbein direkt im Stand – viel spezifischer für Kicks als liegend. TRX gibt dir Sicherheit um die Tiefe zu erreichen die du alleine noch nicht schaffst. Stärkt Quadrizeps, Gluteus und Standbein-Stabilität gleichzeitig.",
+    variante: "Zu schwer: beide Beine leicht geöffnet und nur ein Bein leicht anheben (assistierter Squat). Tiefer gehen wenn die Kontrolle sitzt.",
+    muskeln: ["Quadrizeps", "Gluteus maximus", "Gluteus medius", "Core", "Standbein-Stabilisatoren"],
   },
   // ── CORE ────────────────────────────────────────────────────────────────
   {
@@ -382,6 +389,46 @@ const DEFAULT_STRETCH = [
     warum: "Fördert die Durchblutung aus den Beinen zurück, entspannt das Nervensystem nach der Belastung. Sehr passiv – ideal als Abschluss nach aktivem Training.",
     variante: "Kein Platz an der Wand? Beine einfach gerade nach oben in die Luft halten oder auf einen Stuhl legen.",
     muskeln: ["Nervensystem", "Lymphsystem", "Hüftbeuger passiv"],
+  },
+];
+
+const SHORT_STRETCH = [
+  {
+    id: "ss1", phase: "Aktivierung", name: "Hip CARs", detail: "10 Wdh./Richtung/Seite", emoji: "🔵",
+    ausfuehrung: "Im Stehen oder Vierfüßlerstand. Knie zur Brust ziehen, dann langsam einen großen Kreis mit dem Hüftgelenk beschreiben – nach außen öffnen, nach hinten strecken, zurück. So langsam wie möglich, maximaler Umfang. Dann Richtung wechseln.",
+    warum: "Aktiviert das gesamte Hüftgelenk in einem Zug – ersetzt Beinpendel mit.",
+    variante: "Im Vierfüßlerstand einfacher zu kontrollieren.",
+    muskeln: ["Hüftbeuger", "Hüftaußenrotatoren", "Hüftinnenrotatoren", "Gluteus"],
+  },
+  {
+    id: "ss2", phase: "Rotation", name: "90/90 Knee Lift", detail: "5–8 Wdh./Seite", emoji: "🦵",
+    ausfuehrung: "Im 90/90-Sitz, schwierige Seite zuerst (rechts = vorderes Bein). Ohne Abstützen das hintere Knie aktiv 1–2 cm vom Boden heben. 2–3 Sekunden halten, langsam ablegen. Oberkörper aufrecht. Abstützen erlaubt solange das Knie wirklich aus Muskelkraft hebt.",
+    warum: "Dein spezifischstes Problem – immer rein, auch bei 10 Minuten.",
+    muskeln: ["Hüftinnenrotatoren", "Gluteus medius", "TFL", "Core"],
+  },
+  {
+    id: "ss3", phase: "Hüftbeuger", name: "Half-Kneeling Hip Flexor Stretch", detail: "60 Sek./Seite", emoji: "🧎",
+    ausfuehrung: "Kniender Ausfallschritt, hinteres Knie auf dem Boden. Becken eintucken: Steiß nach unten, Unterbauch anspannen. Dann als Block nach vorne sinken bis Zug tief in der Hüfte spürbar. Rücken bleibt gerade. ⚠️ Seitenwechsel nach 60 Sek.!",
+    warum: "Wichtigster Einzelstretch – auch in der Kurzversion unverzichtbar.",
+    muskeln: ["Iliopsoas", "Rectus femoris", "Hüftbeuger"],
+  },
+  {
+    id: "ss4", phase: "Hüftbeuger", name: "Pigeon Pose", detail: "60 Sek./Seite", emoji: "🕊️",
+    ausfuehrung: "Aus dem Vierfüßlerstand rechtes Knie zur rechten Hand führen. Unterschenkel möglichst parallel zur Matte. Linkes Bein gestreckt nach hinten. Oberkörper auflegen und loslassen. Rechts länger bleiben wenn nötig. ⚠️ Seitenwechsel nach 60 Sek.!",
+    warum: "Tiefste Außenrotations-Dehnung – 60s reicht für die Kurzversion.",
+    muskeln: ["Piriformis", "Gluteus medius", "Hüftaußenrotatoren"],
+  },
+  {
+    id: "ss5", phase: "Hüftöffnung", name: "Frosch", detail: "60 Sek.", emoji: "🐸",
+    ausfuehrung: "Auf allen Vieren, Knie weit nach außen, Füße in Linie mit den Knien. Hüfte langsam nach hinten sinken lassen. Tief atmen. Oder dynamisch: langsam vor und zurück wiegen.",
+    warum: "Einzigartige Funktion – öffnet Hüfte von innen, ergänzt alles andere.",
+    muskeln: ["Adduktoren", "Hüftbeuger", "Gluteus"],
+  },
+  {
+    id: "ss6", phase: "Abschluss", name: "Legs up the Wall", detail: "2 Min.", emoji: "🧘",
+    ausfuehrung: "Rückenlage nahe an der Wand. Beine senkrecht nach oben lehnen. Arme locker seitlich, Augen schließen. Komplett loslassen und atmen.",
+    warum: "Passiver Abschluss – kostet keine Energie und beruhigt das Nervensystem.",
+    muskeln: ["Nervensystem", "Hüftbeuger passiv"],
   },
 ];
 
@@ -1334,7 +1381,7 @@ function App(){
   useEffect(()=>{if(loaded)save("kb4-stretch-ex",stretchEx);},[stretchEx,loaded]);
   useEffect(()=>{if(loaded)save("kb4-settings",{pauseSek});},[pauseSek,loaded]);
 
-  const tabs=[{id:"workout",label:"Workout",icon:"🥊"},{id:"stretch",label:"Stretch",icon:"🧘"},{id:"edit",label:"Anpassen",icon:"✎"}];
+  const tabs=[{id:"workout",label:"Workout",icon:"🥊"},{id:"stretch",label:"Stretch",icon:"🧘"},{id:"quick",label:"10 Min",icon:"⚡"},{id:"edit",label:"Anpassen",icon:"✎"}];
 
   if(!loaded)return<div style={{minHeight:"100vh",background:T.bg,display:"flex",alignItems:"center",justifyContent:"center",color:T.textMuted,fontFamily:T.font,fontSize:"16px"}}>Lade…</div>;
 
@@ -1378,6 +1425,16 @@ function App(){
               <div style={{fontSize:"22px",fontWeight:"800",color:T.text}}>Stretch Routine</div>
             </div>
             <SessionView exercises={stretchEx} savedProgress={null} pauseSek={pauseSek} onComplete={()=>{}}/>
+          </div>
+        )}
+
+        {tab==="quick"&&(
+          <div>
+            <div style={{marginBottom:"16px"}}>
+              <div style={{fontSize:"11px",fontWeight:"700",letterSpacing:"2px",color:T.teal,marginBottom:"4px"}}>MOBILITY · ~10 MIN</div>
+              <div style={{fontSize:"22px",fontWeight:"800",color:T.text}}>Kurzroutine</div>
+            </div>
+            <SessionView exercises={SHORT_STRETCH} savedProgress={null} pauseSek={pauseSek} onComplete={()=>{}}/>
           </div>
         )}
 
